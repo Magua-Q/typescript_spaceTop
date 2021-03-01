@@ -1,0 +1,23 @@
+{
+    "compilerOptions": { // 编译器的配置选项
+        "target": "ES2015", // ts编译之后的es的版本
+        "module": "ES2015", // 模块化的规范
+        // "lib": ["DOM"], // 项目中使用的库
+        "outDir": "./dist", // 编译后文件存放目录
+        // "outFile": "./dist/app.js"
+        "allowJs": false, 
+        "checkJs": false,
+        "removeComments": false,
+        "noEmitOnError": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "./src/**/*"
+    ], // 用来指定哪些文件需要被编译
+    "exclude": [
+        "./src/hello/**/*"
+    ], // 不包含哪些文件, 不需要编辑的目录
+}
